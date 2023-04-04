@@ -6,9 +6,11 @@ AWS.config.update({ region: "ap-northeast-2" });
 
 // Create S3 service object
 
+const access = require("./access.js");
+
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAYAPT5ALZP4YPFR5O",
-  secretAccessKey: "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",
+  accessKeyId: access.accessKeyId,
+  secretAccessKey: access.secretAccessKey,
   apiVersion: "2006-03-01",
 });
 
