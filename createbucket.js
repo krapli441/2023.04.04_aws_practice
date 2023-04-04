@@ -19,11 +19,15 @@ const s3 = new AWS.S3({
   secretAccessKey: key.secret_access_key,
 });
 
+let bucketParams = {
+  Bucket: process.argv[2],
+};
+
 // ! S3 쿼리문(?)을 작성해줌.
-s3.listBuckets(function (err, data) {
+s3.createBucket(bucketParams, function (err, data) {
   if (err) {
     console.log("Error", err);
   } else {
-    console.log("Success", data.Buckets);
+    console.log("Success", data.Location);
   }
 });
