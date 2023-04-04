@@ -1,16 +1,15 @@
 {
-  "dependencies": {
-    "aws-sdk": "^2.1349.0"
-  },
   "name": "2023.04.04_aws_practice",
   "version": "1.0.0",
-  "main": "s3.js",
-  "devDependencies": {},
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "type": "module",
+  "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "aws-sdk": "^2.1349.0"
+  }
 }
