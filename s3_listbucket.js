@@ -3,7 +3,7 @@ var AWS = require("aws-sdk");
 // import AWS from "aws-sdk";
 // import { S3 } from "./node_modules/aws-sdk/clients/s3.js";
 
-var S3 = require("./node_modules/aws-sdk/clients/s3.js");
+var S3 = require("aws-sdk/clients/s3.js");
 // Set the region
 AWS.config.update({ region: "ap-northeast-2" });
 
