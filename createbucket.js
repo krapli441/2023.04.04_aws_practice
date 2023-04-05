@@ -5,7 +5,6 @@ const AWS = require("aws-sdk");
 AWS.config.update({ region: "ap-northeast-2" });
 
 // ! 접근 키와 비밀 접근 키를 불러옴
-// ! 이렇게 불러와도 AWSCompromisedKeyQuarantineV2에 걸렸음
 // ! 안전하게 키를 불러올 방법을 찾아봐야 할 것 같다.
 const key = require("./key.js");
 
