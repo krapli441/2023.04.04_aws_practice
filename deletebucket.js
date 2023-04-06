@@ -22,3 +22,5 @@ s3.deleteBucket(bucketParams, function (err, data) {
     console.log("Success", data);
   }
 });
+
+// todo commit
